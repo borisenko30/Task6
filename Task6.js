@@ -60,8 +60,6 @@ var studentController = new Controller({
 document.onclick = function () {
 	for(var elem in studentController.clickHandlers) {
 		if (elem == event.target.id) {
-			
-			
 			var func = studentController.clickHandlers[elem];
 			studentController[func]();
 		};
